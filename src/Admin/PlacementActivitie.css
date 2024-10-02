@@ -1,0 +1,254 @@
+.placement-activities-containers {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: #666;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  border: #007bff;
+  text-align: center;
+  position: relative;
+  left: 54%; /* Centers the container */
+  transform: translateX(-60%); /* Shifts the container 10% to the left */
+}
+
+/* Keep headings and paragraphs centered */
+h1, h2, h3 {
+  color: black;
+  margin-bottom: 10px;
+  text-align: center; /* Centers the headings */
+}
+
+p {
+  line-height: 1.6;
+  color: #6c5454;
+  text-align: center; /* Centers paragraph text */
+  margin-bottom: 10px;
+}
+  
+  .statistics ul,
+  .steps,
+  .company-partners ul,
+  .event-calendar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .statistics li,
+  .steps li,
+  .company-partners li,
+  .event-calendar li {
+    margin-bottom: 5px;
+  }
+  
+  .success-stories blockquote {
+    font-style: italic;
+    color: #666;
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+  }
+  
+  .placement-events .event-calendar,
+  .placement-events .event-reports {
+    margin-bottom: 20px;
+  }
+  
+  .partnerships .company-partners li {
+    display: inline-block;
+    background: #34a8b8;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .feedback-forms textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .feedback-forms button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-forms button:hover {
+    background-color: #0056b3;
+  }
+  
+  .apply-now-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-now-button:hover {
+    background-color: #218838;
+  }
+  
+  .live-chat {
+    background-color: #26bbaf;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .visual-content .photos-videos,
+  .visual-content .infographics {
+    margin-bottom: 20px;
+  }
+  
+  .photos-videos p,
+  .infographics p {
+    background: #6ea5db;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .photo-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .video-gallery {
+    margin-top: 20px;
+  }
+  
+  .video-gallery iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 5px;
+  }
+  
+  .call-to-action {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* Modal styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-contents {
+    background-color: #47aa70;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 15px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .infographic-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .infographic-gallery img {
+    width: 200px;
+    height: 300px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  /* Resources Section styles */
+  .resources {
+    margin-top: 20px;
+  }
+  
+  .resources h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .resources div {
+    margin-bottom: 20px;
+  }
+  
+  .resources ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .resources ul li {
+    margin-bottom: 10px;
+  }
+  
+  .resources a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .resources a:hover {
+    text-decoration: underline;
+  }

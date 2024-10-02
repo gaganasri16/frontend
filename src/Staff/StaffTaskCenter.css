@@ -1,0 +1,73 @@
+/* Container styles */
+.main_container1 {
+  display: flex;
+  flex-direction: column; /* Ensure content stacks vertically */
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-width: 900px;
+  box-shadow: 0 3px 6px rgba(12, 12, 12, 0.607);
+  overflow: hidden;
+  position: absolute; /* Fixed position to stay in viewport */
+  top: 60%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  border-radius: 5px;
+  backdrop-filter: blur(10px); /* Adjust blur effect */
+  z-index: 1000; /* Ensure it appears above other content */
+  display: block; /* Ensure it is displayed by default */
+}
+
+/* Ensure visibility of .staff-task-center */
+.staff-task-center {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.staff-task-center h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Task card styles */
+.task-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.task-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.task-card textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  resize: vertical; /* Allow users to resize vertically */
+}
+
+.task-card input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.task-card button {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-card button:hover {
+  background: #45a049;
+}

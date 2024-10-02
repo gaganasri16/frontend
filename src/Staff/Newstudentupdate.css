@@ -1,0 +1,177 @@
+/* Container for the entire component */
+.new-student-update-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-width: 900px;
+  box-shadow: 0 3px 6px rgba(12, 12, 12, 0.607);
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  backdrop-filter: blur(100px);
+  padding: 20px;
+}
+
+/* Styling for the main form container */
+.new-student-update-form {
+  max-width: 700px;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the student registration form when shown */
+.student-registration-form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Row styling for each input field */
+.form-row {
+  width: 450px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Label styling for form inputs */
+.form-label {
+  width: 100%; /* Ensure the label takes full width for alignment */
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+  text-align: left; /* Align label text to the left */
+}
+
+/* Input styling for text fields */
+.form-input {
+  width: 100%; /* Adjusted to fit the container */
+  max-width: 450px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling for the submit button */
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+/* Submit button hover effect */
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the back button */
+.back-button {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px; /* Positioned below the submit button */
+  transition: background-color 0.3s;
+}
+
+/* Back button hover effect */
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+/* Centering heading text */
+.update_form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  width: 100%;
+}
+.update_form input{
+  align-items: center;
+  padding: 8px;
+  width: 400px;
+  border-radius: 5px;
+
+}
+.update_form button{
+  margin-left: 130px;
+  width: 140px;
+}
+
+/* Styling for the success message */
+
+.success-message {
+  background-color: #d4edda; /* Light green background */
+  color: #116424; /* Dark green text */
+  border: 1px solid #c3e6cb; /* Light green border */
+}
+
+/* Styling for error message */
+
+.error-message {
+  background-color: #f8d7da; /* Light red background */
+  color: #d41e30; /* Dark red text */
+  border: 1px solid #f5c6cb; /* Light red border */
+}
+
+
+
+
+
+/* Styling for the error message *//* Styling for the form header */
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Styling for the back (arrow) button */
+.form-header .fa-arrow-left {
+  font-size: 24px; /* Adjust the size as needed */
+  cursor: pointer;
+  color: #007bff; /* Blue color for the arrow button */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.form-header .fa-arrow-left:hover {
+  color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Styling for the close button */
+.form-header .fa-times {
+  font-size: 24px; /* Adjust the size as needed */
+  cursor: pointer;
+  color: #dc3545; /* Red color for the close button */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.form-header .fa-times:hover {
+  color: #c82333; /* Darker red color on hover */
+}
+

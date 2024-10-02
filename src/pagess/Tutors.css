@@ -1,0 +1,180 @@
+.tutors-container {
+    padding: 40px;
+    background-color: #f0f8ff; /* Light blue background */
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .tutors-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .tutors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tutor-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* Required for the pop-up positioning */
+    overflow: hidden; /* Hide overflow to ensure the pop-up doesn't cause layout issues */
+    animation: slideInUp 0.5s ease-out;
+  }
+  
+  .tutor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tutor-image,
+  .tutor-icon {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .tutor-icon {
+    color: #007bff;
+  }
+  
+  .tutor-name {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #007bff;
+  }
+  
+  .tutor-subject {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .tutor-experience {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #777;
+  }
+  
+  .tutor-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .tutor-popup {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #ff6347, #ff4500); /* Gradient for a more vibrant look */
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.3s ease-out, background 0.3s;
+  }
+  
+  .tutor-card:hover .tutor-popup {
+    bottom: 0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+/* Styles for the new popup overlay */
+.new-popup-overlay {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Ensure it appears on top of other elements */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.new-popup-overlay.active {
+  opacity: 1;
+}
+
+/* Styles for the new popup content */
+.new-popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px; /* Decrease width of the popup */
+  width: 90%; /* Ensure it doesn't exceed viewport width */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+/* Additional styling for popup content */
+.new-popup-content h2 {
+  margin-top: 0;
+}
+
+.new-popup-content div {
+  margin-bottom: 10px; /* Space between elements */
+}
+
+.new-popup-content strong {
+  display: block; /* Makes labels stand out */
+  margin-bottom: 5px; /* Space between label and value */
+}
+
+.new-popup-content button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.new-popup-content button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+@media (max-width: 600px) {
+  .new-popup-content {
+    max-width: 90%;
+    width: 100%;
+  }
+}

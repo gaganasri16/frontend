@@ -1,0 +1,133 @@
+/* src/components/Webinars.css */
+.webinars-container {
+  padding: 40px;
+  background-color: #eef2f3;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.webinars-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.webinars-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.webinar-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: slideInUp 0.5s ease-out;
+}
+
+.webinar-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.webinar-icon {
+  font-size: 60px; /* Adjust size as needed */
+  margin-bottom: 15px;
+}
+
+.webinar-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.webinar-date,
+.webinar-description,
+.webinar-speaker {
+  font-size: 16px;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Webinars.css */
+
+/* Container for the entire webinars section */
+.webinars-container {
+  padding: 20px;
+}
+
+.webinars-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.webinars-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.webinar-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.webinar-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.webinar-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.webinar-date, .webinar-description, .webinar-speaker {
+  margin: 8px 0;
+}
+
+.enroll-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.enroll-button:hover {
+  background-color: #0056b3;
+}

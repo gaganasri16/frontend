@@ -1,0 +1,59 @@
+/* StaffNotifications.css */
+
+/* Container for the entire notifications component */
+.notification-container {
+  position: absolute; /* Fixes the position relative to the viewport */
+  bottom: 350px; /* Distance from the bottom */
+  right: 300px; /* Distance from the right side */
+  max-width: 400px; /* Maximum width of the floating container */
+  margin: 0;
+  padding: 20px;
+  backdrop-filter: blur(10px); /* Adjust blur effect */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it floats above other content */
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.notification-heading {
+  font-size: 1.5em; /* Adjusted size for floating container */
+  margin-bottom: 15px; /* Reduced margin for floating container */
+  margin-left: 60px;
+  color: #333;
+}
+
+.notification-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Reduced margin for floating container */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-content p {
+  margin: 4px 0; /* Adjusted margin for better spacing */
+}
+
+.loading-container, .error-container {
+  text-align: center;
+  font-size: 1em; /* Adjusted size for floating container */
+  color: #666;
+  padding: 10px;
+}
+
+.error-container {
+  color: #d9534f;
+}
+
+.no-notifications {
+  text-align: center;
+  font-size: 1em; /* Adjusted size for floating container */
+  color: #999;
+}

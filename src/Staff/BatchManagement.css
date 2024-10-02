@@ -1,0 +1,116 @@
+/* src/components/BatchManagement.css */
+.batch-management {
+    position: absolute; /* Ensure the popup is fixed on the screen */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Limit maximum width */
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Adjust blur effect */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure the popup is above other content */
+    overflow: auto; /* Add scroll if content overflows */
+}
+
+
+.view-batch{
+    width: 500px;
+    margin-left:30px;
+    margin-top: 10px;
+    color: white;
+    background-color: #10f01469;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.batch-management h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.batch-management h3 {
+    margin-bottom: 10px;
+}
+
+.batch-management form {
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.batch-management label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.batch-management input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.batch-management button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color:orangered;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.batch-management button:hover {
+    background-color:orangered;
+}
+
+.message {
+    text-align: center;
+    font-size: 16px;
+    color: #d9534f; /* Error color */
+    margin-top: 10px;
+}
+
+.batch-management ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.batch-management li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.batch-management a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.batch-management a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .batch-management {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .batch-management input[type="text"] {
+        width: calc(100% - 20px);
+    }
+}
